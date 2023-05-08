@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Form1</title>
+    <script src="javascript/index.js"></script>
+
+</head>
+<body>      
+    
+    <form action="http://se.shenkar.ac.il/teach/web1/get_form3.php" method="get" autocomplete="on" id="TheName">
+
+        <span>
+        <label>Name:
+            <input type="text" name="fullName" placeholder="My Name" class="form-control" class="border border-danger">
+        </label>  
+        <span id="Name-warning" class="alert alert-danger" role="alert" style="visibility: hidden;"> Enter Only Letters!</span>
+        </span ><br><br>        
+        <label >Password:
+            <input type="password" name="pass" placeholder="My Password" class="form-control" Pattern=".{7,}" title="Ten letter">
+        </label><br><br>        
+        <label >Email:
+            <input type="email" name="mail" placeholder="My Mail" class="form-control">
+        </label> <br><br>       
+        <label >Website:
+            <input type="url" name="website" placeholder="My Website" class="form-control">
+        </label><br><br>      
+        <label >phone:
+            <input type="tel" name="phone" placeholder="My Number" class="form-control" pattern="[0-9]+" title="Numbers only from 0-9." >
+        </label><br><br>       
+        <label >coffee:
+            <input type="number" name="coffee" placeholder="Amount Of Coffee" class="form-control" >
+        </label><br><br>        
+        <label >Temperature:
+            <input type="range" name="temper" class="form-range" >
+        </label><br>
+        <label >address:
+            <textarea name="address" rows="3" cols="30" placeholder="My Address" class="form-control" ></textarea>
+        </label><br><br>        
+
+
+
+
+
+        <span >Interestes:
+        <label class="form-check form-check-inline">Netflix
+            <input type="checkbox" name="interests[]" value="Netflix" class="form-check-input"  >
+        </label> 
+        <label  class="form-check form-check-inline">Friends
+            <input type="checkbox" name="interests[]" value="Friends" class="form-check-input">
+        </label>   
+        <label class="form-check form-check-inline">Sports
+            <input type="checkbox" name="interests[]" value="Sports" class="form-check-input">
+        </label>   
+        <label class="form-check form-check-inline">Gaming
+            <input type="checkbox" name="interests[]" value="Gaming" class="form-check-input">
+        </label>    
+        <label class="form-check form-check-inline">Swimming
+            <input type="checkbox" name="interests[]" value="Swimming" class="form-check-input">
+        </label>
+        <span id="interest-warning" class="alert alert-danger" role="alert" style="visibility: hidden;"> Check at least 3 Interestes!</span>
+        </span><br><br>
+
+
+
+
+
+        <span>Gender:
+        <label >Male
+            <input type="radio" name="gender" value="Male"   class="form-check-input" name="flexRadioDefault" id="flexRadioDefault1">
+        </label>
+        <label >Female
+            <input type="radio" name="gender" value="Female" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault1" >
+        </label>
+        </span><br><br>  
+
+
+
+
+
+        <label>age:
+            <select id="SelectAge" name="age" class="form-select form-select-lg mb-0" aria-label=".form-select-lg example"></select>          
+           </label><br><br>   
+        <input type="submit"  class="btn btn-primary" id="submit" onclick=" submitButton()()" value="Send" >
+    
+    
+    
+    </form>
+
+
+
+
+
+</body>
+</html>
+
+
